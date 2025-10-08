@@ -1,0 +1,14 @@
+backend = "glx";
+
+blur:
+{
+  method = "gaussian";
+  size = 10;
+};
+
+# Ativa blur no fundo de janelas transparentes (como o Kitty)
+wintypes:
+{
+  "normal" = { fade = true; shadow = true; blur = true; };
+  "dialog" = { fade = true; shadow = true; blur = true; };
+};
